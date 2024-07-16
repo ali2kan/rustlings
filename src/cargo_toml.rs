@@ -8,7 +8,7 @@ pub const BINS_BUFFER_CAPACITY: usize = 1 << 14;
 
 /// Return the start and end index of the content of the list `bin = […]`.
 /// bin = [xxxxxxxxxxxxxxxxx]
-///        |start_ind       |
+///        |start_ind       |111
 ///                         |end_ind
 pub fn bins_start_end_ind(cargo_toml: &str) -> Result<(usize, usize)> {
     let start_ind = cargo_toml
